@@ -1,3 +1,35 @@
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-ExtraLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Italic.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Regular.ttf);
+    font-weight: 500;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -83,6 +115,11 @@ html,body{
 #nav-part3 i:hover{
     color: #FF5858;
 }
+#nav #menu{
+    color: #FF5858;
+    font-weight: 900;
+    display: none;
+}
 
 #center {
     text-align: center;
@@ -90,14 +127,14 @@ html,body{
     font-family: neuton;
 }
 #center h1{
-    font-size: 75px;
+    font-size: 4vw;
     margin-left: -50px;
 }
 #center h1:nth-child(1){
     color: #FF5858;
 }
 #center p{
-    font-size: 20px;
+    font-size: 1.2vw;
     color: rgb(60, 60, 60);
     margin-top: 20px;
     font-family: Right Grotesk;
@@ -172,4 +209,68 @@ html,body{
 
 #content .elem:hover{
     background-color: #FFB07B
+}
+
+
+@media (max-width: 600px) {
+    #page1{
+        min-height: 80vh;
+    }
+    #center{
+        padding-top: 30px;
+    }
+    #center h1{
+        font-size: 10vw;
+    }
+    #center p{
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    #page1 img{
+        width: 100%;
+        height: 40vh;
+        margin-left: 0;
+    }
+    #page2{
+        padding: 20px 30px;
+    }
+    #page2 h1{
+        font-size: 9vw;
+    }
+    #page2 p{
+        margin-top: 10px;
+        font-size: 4.3vw;
+        width: 90%;
+    }
+    #nav{
+        justify-content: space-between;
+        padding: 0vw 7vw;
+    }
+    #nav h1{
+        font-size: 6vw;
+    }
+    #nav h1 span{
+        font-size: 7vw;
+    }
+    #nav-part2{
+        display: none;
+    }
+    #nav-part3{
+        display: none;
+    }
+    #nav #menu{
+        display: block;
+    }
+    #page2 #content{
+        margin-top: 30px;
+    }
+    #content .elem{
+        height: 65vh;
+        width: 85vw;
+        margin: 20px 10px;
+    }
+    #content .elem h1{
+        font-size: 6vw;
+        margin-top: 5px;
+    }
 }

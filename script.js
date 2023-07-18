@@ -23,3 +23,25 @@ tl.from("#nav h1 ,#nav h4, #nav h5,#nav i",{
     duration: 0.6,
     scale: 0.7
 })
+
+var tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: "#page2 h1",
+        scroller: "body",
+       /* markers: true,*/
+        start: "top 80%"
+    }
+})
+tl2.from("#page2 h1",{
+    y: 30,
+    opacity: 0,
+})
+tl2.from("#page2 p",{
+    y: 30,
+    opacity: 0,
+})
+tl2.from("#page2 #content",{
+    y: 100,
+    opacity: 0,
+    scale: 0.9
+})
